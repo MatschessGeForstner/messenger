@@ -1,0 +1,101 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+background-color: #2c3e50;
+font-family: Roboto;
+font-size: 17px;
+font-weight: 400;
+color: #fff;
+}
+
+.icon_medium{
+width: 25px;
+height: 25px;
+margin-left: -25px;
+vertical-align: middle;
+}
+
+.icon_medium:hover{
+cursor: pointer;
+}
+
+#loginbox{
+position: absolute;
+left: 32.5%;
+width: 35%;
+top: 25%;
+height: 40%;
+background-color: #fff;
+}
+
+#loginboxContent{
+text-align: center;
+padding-top: 10%;
+background-color: #2ecc71;
+height: 90%;
+}
+
+#loginboxHeader{
+width: 94%;
+background-color: #29b865;
+padding: 15px 3% 15px 3%;
+font-size: 18px;
+font-weight: 400;
+}
+
+.loginTextbox:focus, .loginButton:focus{ /* Freimachen */
+box-shadow: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+-o-box-shadow: none;
+transition: none;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+outline: 0px none;
+}
+
+.loginTextbox{
+padding: 10px;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px;
+width: 50%;
+background-color: rgba(0, 0, 0, 0.2);
+border: 0 none;
+font-family: Roboto;
+font-weight: 300;
+color: #fff;
+}
+
+.loginTextbox:focus{
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loginButton{
+padding: 10px;
+padding-left: 35px;
+padding-right: 35px;
+background-color: rgba(0, 0, 0, 0.2);
+border: 0 none;
+font-family: Roboto;
+font-weight: 400;
+color: #fff;
+transition: background-color 0.3s ease;
+-webkit-transition: background-color 0.3s ease;
+-moz-transition: background-color 0.3s ease;
+-o-transition: background-color 0.3s ease;
+}
+
+.loginButton:hover{
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loginLink{
+font-size: 16px;
+font-weight: 300;
+color: #fff;
+}

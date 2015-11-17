@@ -1,0 +1,117 @@
+#chatInfo{
+background-color: #333;
+text-align: left;
+color: #fff;
+width: 96%;
+padding: 10px 2% 10px 2%;
+}
+
+#userInfo{
+display: inline-block;
+vertical-align: middle;
+}
+
+#userstatus{
+font-size: 12px;
+color: #999;
+font-style: italic;
+}
+
+#chatInput{
+position: absolute;
+bottom: 0px;
+background-color: #333;
+width: 100%;
+padding: 10px 0 10px 0;
+}
+
+#mediaboxOptions{
+display: none;
+position: absolute;
+bottom: 10px;
+background-color: #333;
+right: 10px;
+padding: 15px 50px 15px 50px;
+}
+
+#content{
+text-align: left;
+padding: 2%;
+overflow: auto;
+height: 320px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #fff;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #D8D8D8;
+}
+
+/* Sprechblase */
+.bubble{
+display: inline-block;
+padding: 5px;
+background: #fff;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+vertical-align: middle;
+box-shadow: 0px 1px 1px #999;
+}
+
+.time{
+color: #999;
+font-size: 11px;
+}
+
+.thumbnail{
+width: 80px;
+height: 80px;
+border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.thumbnailMarked{
+width: 80px;
+height: 80px;
+border: 2px solid #2980b9;
+}
+
+.chatLeft, .chatRight{
+margin-bottom: 5px;
+}
+
+.chatRight{
+text-align: right;
+}
+
+/* Attach */
+
+#attach{
+display: inline-block;
+}
+
+#attachButton{
+width: 40px;
+height: 40px;
+text-align: center;
+}
+
+#attachNow{
+opacity: 0;
+width: 1px;
+}
+
+#attachFile{
+display: none;
+position: fixed;
+margin-top: -95px;
+padding: 7.5px;
+padding-left: 0px;
+border-radius: 20px;
+background-color: #E6E6E6;
+text-align: center;
+box-shadow: 0px 1px 1px #999;
+}
