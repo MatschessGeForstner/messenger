@@ -5,6 +5,11 @@ margin: 0;
 
 body{
 background-color: #2c3e50;
+background-image: url("../img/wallpaper2.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 font-family: Roboto;
 font-size: 17px;
 font-weight: 400;
@@ -14,33 +19,39 @@ color: #fff;
 .icon_medium{
 width: 25px;
 height: 25px;
-margin-left: -25px;
+margin-left: -71%;
 vertical-align: middle;
-}
-
-.icon_medium:hover{
-cursor: pointer;
+transition: margin 0.2s ease;
+-webkit-transition: margin 0.2s ease;
+-moz-transition: margin 0.2s ease;
+-o-transition: margin 0.2s ease;
 }
 
 #loginbox{
 position: absolute;
-left: 32.5%;
-width: 35%;
+left: 50%;
+margin-left: -250px;
+width: 500px;
 top: 25%;
-height: 40%;
-background-color: #fff;
+background-color: #2ecc71;
+-webkit-box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+-moz-box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
 }
 
 #loginboxContent{
-text-align: center;
 padding-top: 10%;
-background-color: #2ecc71;
-height: 90%;
+line-height: 15px;
+padding-bottom: 10%;
+}
+
+#loginboxContentMargin{
+margin-left: 20%;
 }
 
 #loginboxHeader{
 width: 94%;
-background-color: #29b865;
+background-color: rgba(0, 0, 0, 0.2);
 padding: 15px 3% 15px 3%;
 font-size: 18px;
 font-weight: 400;
@@ -58,29 +69,39 @@ transition: none;
 outline: 0px none;
 }
 
-.loginTextbox{
+.loginTextbox{	
 padding: 10px;
-padding-left: 5px;
-padding-right: 5px;
-margin-left: 5px;
-width: 50%;
+padding-left: 35px;
+width: 60%;
 background-color: rgba(0, 0, 0, 0.2);
 border: 0 none;
 font-family: Roboto;
 font-weight: 300;
 color: #fff;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
 }
 
 .loginTextbox:focus{
+padding-left: 10px;
+padding-right: 35px;
 background-color: rgba(0, 0, 0, 0.3);
 }
 
+#username:focus ~ #iconUsername, #password:focus ~ #iconPassword{
+margin-left: -80%;
+}
+
 .loginButton{
-padding: 10px;
-padding-left: 35px;
-padding-right: 35px;
+padding: 9px;
+padding-left: 65px;
+padding-right: 65px;
 background-color: rgba(0, 0, 0, 0.2);
 border: 0 none;
+border-top: 2px solid rgba(0, 0, 0, 0.0);
+border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 2px 2px;
 font-family: Roboto;
 font-weight: 400;
 color: #fff;
@@ -92,10 +113,60 @@ transition: background-color 0.3s ease;
 
 .loginButton:hover{
 background-color: rgba(0, 0, 0, 0.3);
+cursor: pointer;
+}
+
+.loginButton:active{
+background-color: rgba(0, 0, 0, 0.4);
+border-top: 2px solid rgba(0, 0, 0, 0.2);
+border-bottom: 2px solid rgba(0, 0, 0, 0.0);
 }
 
 .loginLink{
-font-size: 16px;
+font-size: 14px;
 font-weight: 300;
 color: #fff;
 }
+
+/* Checkbox */
+
+.checkbox {
+position:absolute;
+z-index:-1000;
+left:-1000px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+height:1px;
+width:1px;
+margin:-1px;
+padding:0;
+border:0;
+}
+
+.checkbox + label.label {
+font-weight: 300;
+padding-left:22px;
+height:14px;
+display:inline-block;
+background-repeat:no-repeat;
+background-position: 0 0;
+font-size:14px;
+vertical-align:middle;
+cursor:pointer;
+}
+
+.checkbox:checked + label.label {
+background-position: 0 -14px;
+}
+
+label.label {
+background-image:url("../img/checkbox/checkbox.png");
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Checkbox ENDE */

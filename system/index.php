@@ -10,7 +10,6 @@
 	<title>Messenger</title>
   </HEAD>
   <BODY>
-      
   <div id="overlay"></div>
   <div id="container">
 		<div id="containerLeft">
